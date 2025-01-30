@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navLink {
+  background-color: grey;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.navLink:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #391699;
+}
