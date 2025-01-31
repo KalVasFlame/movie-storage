@@ -3,8 +3,6 @@ import Button from "../Button/Button";
 
 import s from "./MoviesDescription.module.css";
 const MovieDescription = ({ movie, onClose }) => {
-  console.log(movie);
-
   return (
     <div className={s.movieDescription}>
       <MovieCard movie={movie} />
