@@ -15,7 +15,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/movie-storage" element={<HomePage />} />
-          <Route path="/favorites" element={<FavoritesMoviePage />} />
+          <Route path="/movie-storage/favorites" element={<FavoritesMoviePage />} />
         </Routes>
       </main>
     </FavoritesMoviesProvider>

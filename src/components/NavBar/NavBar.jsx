@@ -5,7 +5,7 @@ import s from "./NavBar.module.css";
 
 const NavBar = () => {
   const currentPath = useLocation().pathname;
-
+  console.log(currentPath);
   return (
     <nav className={s.navbar}>
       {navBarList.map((item) => (
