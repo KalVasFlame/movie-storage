@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/KalVasFlame.github.io/movie-storage/static/css/main.3d89a852.css",
-    "main.js": "/KalVasFlame.github.io/movie-storage/static/js/main.7059cc35.js",
-    "static/media/pexels-photo-11814657.jpeg": "/KalVasFlame.github.io/movie-storage/static/media/pexels-photo-11814657.fc64ae2d8dda4471da53.jpeg",
-    "static/media/default-poster.jpg": "/KalVasFlame.github.io/movie-storage/static/media/default-poster.6c3e30ea09fb8b949c02.jpg",
-    "index.html": "/KalVasFlame.github.io/movie-storage/index.html",
-    "main.3d89a852.css.map": "/KalVasFlame.github.io/movie-storage/static/css/main.3d89a852.css.map",
-    "main.7059cc35.js.map": "/KalVasFlame.github.io/movie-storage/static/js/main.7059cc35.js.map"
+    "main.css": "/movie-storage/static/css/main.dda41280.css",
+    "main.js": "/movie-storage/static/js/main.7fd8f4df.js",
+    "static/media/pexels-photo-11814657.jpeg": "/movie-storage/static/media/pexels-photo-11814657.fc64ae2d8dda4471da53.jpeg",
+    "static/media/default-poster.jpg": "/movie-storage/static/media/default-poster.6c3e30ea09fb8b949c02.jpg",
+    "index.html": "/movie-storage/index.html",
+    "main.dda41280.css.map": "/movie-storage/static/css/main.dda41280.css.map",
+    "main.7fd8f4df.js.map": "/movie-storage/static/js/main.7fd8f4df.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d89a852.css",
-    "static/js/main.7059cc35.js"
+    "static/css/main.dda41280.css",
+    "static/js/main.7fd8f4df.js"
   ]
 }
