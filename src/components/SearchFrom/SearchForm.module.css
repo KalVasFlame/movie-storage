@@ -1,35 +1,82 @@
 .searchForm {
-    margin: auto;
-    padding: 1rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.searchInput {
-    margin-right: 0.5rem;
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    color: white;
-    font-size: 1rem;
-}
-
-.searchInput:focus {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .searchInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
     outline: none;
-    box-shadow: 0 0 0 2px #666;
-}
-
-.searchButton {
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #333333;
+  }
+  
+  .searchInput:focus {
+    border-color: #007bff;
+  }
+  
+  .searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
     color: white;
-    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.searchButton:hover {
-    background-color: #391699;
-}
+    transition: background-color 0.3s;
+  }
+  
+  .searchButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .searchButton:focus {
+    outline: none;
+  }
+  
+  p {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .searchForm {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 15px;
+    }
+  
+    .searchInput {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .searchButton {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .searchInput {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .searchButton {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
