@@ -1,11 +1,11 @@
 import s from "./Modal.module.css";
 
-const Modal = ({children}) => {
-    return (
-        <div className={s.modalOverlay}>
-            {children}
-        </div>
-    );
-}
+const Modal = ({ onClick, children }) => {
+  return (
+    <div onClick={onClick} className={s.modalOverlay}>
+      {children}
+    </div>
+  );
+};
 
 export default Modal;
