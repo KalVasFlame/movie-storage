@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { getPopularMovies } from "../../services/api";
 
 import Loading from "../../components/Loading/Loading";
 import SearchForm from "../../components/SearchFrom/SearchForm";
 import MoviesList from "../../components/MoviesList/MoviesList";
+import Modal from "../../components/Modal/Modal";
+
+const overlaysRoot = document.getElementById("overlays");
 
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
@@ -27,9 +31,14 @@ const HomePage = () => {
   }, []);
   return (
     <>
-    <SearchForm setMovies={setMovies} />
+      <SearchForm setMovies={setMovies} />
       {loading ? (
-        <Loading text="Loading Popular Movies" />
+        createPortal(
+          <Modal>
+            <Loading text="Loading Popular Movies" />
+          </Modal>,
+          overlaysRoot
+        )
       ) : (
         <MoviesList movies={movies} />
       )}

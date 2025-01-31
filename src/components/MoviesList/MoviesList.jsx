@@ -12,6 +12,7 @@ const overlaysRoot = document.getElementById("overlays");
 
 const MoviesList = ({ movies }) => {
   const [selectedMovie, setSelectedMovie] = useState(null);
+  
   const onClose = () => {
     setSelectedMovie(null);
   };
