@@ -2,8 +2,8 @@
     border: 1px solid yellow;
   cursor: pointer;
   position: absolute;
-  top: 3.125rem;
-  right: 3.125rem;
+  top: 1rem;
+  right: 1rem;
   z-index: 100;
   font-size: 1.5rem;
   color: yellow;
@@ -15,8 +15,6 @@
   );
   color: #fff;
   @media screen and (max-width: 768px) {
-    top: 1.875rem;
-    right: 1.875rem;
     padding: 0.8rem 1.2rem;
   }
 }

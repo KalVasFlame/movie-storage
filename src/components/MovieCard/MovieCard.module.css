@@ -1,55 +1,42 @@
 .movieCard {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  border-radius: 8px;
-  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  color: #fff;
-  background-image: url('../../images/pexels-photo-11814657.jpeg');
-  }
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
 
+.movieCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 .moviePoster {
-  height: 100%;
   position: relative;
+  width: 100%;
+  /* height: 300px; */
   overflow: hidden;
+  border-bottom: 4px solid #ddd;
 }
 
 .movieImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.movieImage:hover {
-  transform: scale(1.05);
-}
-
-.addToFavorites {
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 100;
-  font-size: 1.5rem;
-  color: yellow;
 }
 
 .movieTitle {
+  font-size: 16px;
   font-weight: bold;
-  font-size: 1.5rem;
-  color: yellow;
+  padding: 10px;
+  color: #333;
   text-align: center;
 }
 
 .releaseYear {
-  font-size: 1.5rem;
-  color: rgb(197, 197, 197);
-  font-weight: bold;
-
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 10px;
 }

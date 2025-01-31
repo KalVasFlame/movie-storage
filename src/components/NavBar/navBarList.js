@@ -2,7 +2,7 @@ const navBarList = [
     {
         id: 1,
         text: "Home",
-        to: "/",
+        to: "/movie-storage",
     },
     {
         id: 2,

@@ -14,7 +14,7 @@ function App() {
       </header>
       <main className="main-content">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/movie-storage" element={<HomePage />} />
           <Route path="/favorites" element={<FavoritesMoviePage />} />
         </Routes>
       </main>

@@ -5,8 +5,8 @@ import s from "./MoviesDescription.module.css";
 const MovieDescription = ({ movie, onClose }) => {
   return (
     <div className={s.movieDescription}>
-      <MovieCard movie={movie} />
       <div className={s.descriptionContainer}>
+      <MovieCard movie={movie} />
         <p className={s.descriptionText}>{movie.overview}</p>
         <Button text="Close" onClick={onClose} />
       </div>
